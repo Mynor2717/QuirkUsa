@@ -26,7 +26,7 @@ html, body {
 .loader-clip {
     position: absolute;
     width: 100vw;
-    height: 33.3vh;
+    height: 49.8vh;
     overflow: clip;
     z-index: 1000;
 }
@@ -34,13 +34,13 @@ html, body {
 .clip-top {
     top: 0;
     clip-path: inset(0 0 0 0);
-    background-color: #000;
+    background-color: #03a5ab;
 }
 
 .clip-bottom {
     bottom: 0;
     clip-path: inset(0 0 0 0);
-    background: #000;
+    background: #026d70;
 }
 
 .clip-center {
@@ -49,6 +49,8 @@ html, body {
     width: 100vw;
     height: 33.3vh;
     top: 33.3vh;
+    /*Esto de aqui hace un espacio central que aun no tiene volumen
+     se necesita super poner encima de los demas elementos*/ 
 }
 
 .marquee {
@@ -58,7 +60,7 @@ html, body {
     transform: translate(-50%, -50%);
     width: 200vw;
     color: #fff;
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
     font-size: 16vw;
 }
 
@@ -86,7 +88,7 @@ html, body {
     font-size: 14px;
 }
 
-.container .nav, .container .footer {
+.container .nav, .container .footer  {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -94,8 +96,13 @@ html, body {
     padding: 2em 4em;
 }
 
+.footer {
+    background-color: #000;
+    color: #fff;
+}
+
 .nav {
-    background-color: #6ba9ff;
+    background-color: #5895eb;
 }
 
 .logo {
@@ -117,3 +124,19 @@ html, body {
     font-size: 18px;
     font-weight: bold;
 }
+
+/* === === Estilos de las Secciones === ===*/
+
+/* .Hero__Section {
+    z-index: 2;
+    overflow: hidden;
+} */
+
+/* .Hero__Section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: auto;
+    background-color: #9e9e9e;
+} */

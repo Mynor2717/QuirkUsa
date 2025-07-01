@@ -4,23 +4,36 @@ gsap.from(".clip-top, .clip-bottom", 2,{
     ease: "power4.inOut",
 });
 
+// gsap.from(".clip-center", 4,{
+//     delay: 1,
+//     height: "100vh",
+//     ease: "power4.inOut",
+// });
+
+
 gsap.to(".marquee", 3.5, {
     delay: 0.75,
     top: "50%",
     ease: "power4.inOut",
 });
 
-gsap.from(".clip-top .marquee, .clip-bottom .marquee", 5, {
+gsap.from(".clip-top .marquee", 5, {
     delay: 1,
-    left: "100%",
+    left: "90%",
     ease: "power3.inOut",
 });
 
-gsap.from(".clip-center .marquee", 5, {
+gsap.from(".clip-bottom .marquee", 5,{
     delay: 1,
-    left: "-50%",
+    left: "-90%",
     ease: "power3.inOut",
 });
+
+// gsap.from(".clip-center .marquee", 5, {
+//     delay: 1,
+//     left: "-50%",
+//     ease: "power4.inOut",
+// });
 
 gsap.to(".clip-top", 2,{
     delay: 6,
